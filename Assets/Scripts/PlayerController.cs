@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     private float _movementSpeed = 7.0f;
     private Transform _transform;
     public static PlayerController Instance { get; private set; }
+    public int hp = 10;
     
     private void Awake() {
         Instance = this;
@@ -25,5 +26,12 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 playerPosition = _transform.position;
         return playerPosition;
+    }
+
+    public void getDamage(int damage) {
+        hp -= damage;
+        if (hp <= 0) {
+            Destroy(this.gameObject);
+        }
     }
 }

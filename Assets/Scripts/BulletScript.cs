@@ -7,14 +7,14 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class BulletScript : MonoBehaviour {
-    public Transform player;
     private Vector3 mousePos;
     private Camera mainCam;
     private Rigidbody2D rb;
+    public int damage;
+    private EnemyStats ES;
     public float speed;
     
     void Start() {
-        
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         rb = GetComponent<Rigidbody2D>();
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
@@ -28,7 +28,13 @@ public class BulletScript : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D col) {
-        Destroy(col.gameObject);
-        Destroy(gameObject);
+        if (col.gameObject.tag == "Enemy") {
+            ES = col.gameObject.GetComponent<EnemyStats>();
+            ES.getDamage(damage);
+        }
+
+        if (col.gameObject.tag != "Player") {
+            Destroy(gameObject);
+        }
     }
 }
