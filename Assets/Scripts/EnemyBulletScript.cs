@@ -28,6 +28,8 @@ public class EnemyBulletScript : MonoBehaviour {
 
         if (col.gameObject.tag != "Enemy") {
             Destroy(gameObject);
+            
+
         }
     }
 }
