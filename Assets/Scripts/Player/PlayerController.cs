@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     
@@ -64,9 +65,14 @@ public class PlayerController : MonoBehaviour {
 
     public void getDamage(int damage) {
         hp -= damage;
-        if (hp <= 0) {
-            print("death");
-            // TODO
+        if (hp <= 0)
+        {
+            Time.timeScale = 0f;
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                print(0);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
         }
     }
 }

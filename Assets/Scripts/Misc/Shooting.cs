@@ -45,7 +45,7 @@ public class Shooting : MonoBehaviour {
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
         if (currentAmmo < ammo && Input.GetKeyDown(KeyCode.R)) {
-            reload = true;
+            start_reload();
         }
         if (reload) {
             reloadTimer -= 1 * Time.deltaTime;
