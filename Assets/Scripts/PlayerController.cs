@@ -65,7 +65,8 @@ public class PlayerController : MonoBehaviour {
     public void getDamage(int damage) {
         hp -= damage;
         if (hp <= 0) {
-            Destroy(gameObject);
+            print("death");
+            // TODO
         }
     }
 }
