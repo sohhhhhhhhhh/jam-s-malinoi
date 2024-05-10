@@ -17,7 +17,6 @@ public class AmmoText : MonoBehaviour
         maxAmmo = player.GetMaxAmmo();
     }
 
-    // Update is called once per frame
     void Update()
     {
         currentAmmo_ = player.GetCurrentAmmo();
