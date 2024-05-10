@@ -28,6 +28,12 @@ public class PlayerController : MonoBehaviour
         return playerPosition;
     }
 
+    public Vector3 GetPositionForEnemy()
+    {
+        Vector3 position = _transform.position;
+        return position;
+    }
+
     public void getDamage(int damage) {
         hp -= damage;
         if (hp <= 0) {
