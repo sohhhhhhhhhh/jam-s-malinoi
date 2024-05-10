@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class Shooting : MonoBehaviour {
-    public int reloadTime = 5;
+    public int reloadTime;
     public static Shooting Instance { get; private set; }
     private Camera mainCam;
     private Vector3 mousePos;
@@ -18,7 +18,7 @@ public class Shooting : MonoBehaviour {
     public float timeBetweenFiring;
     public int ammo;
     private int currentAmmo;
-    public float reloadTimer = 2;
+    public float reloadTimer;
     public bool reload = false;
     private SpriteRenderer spriteRenderer;
     
@@ -28,6 +28,7 @@ public class Shooting : MonoBehaviour {
     }
 
     void Start() {
+        reloadTimer = reloadTime;
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         currentAmmo = ammo;
         spriteRenderer = bulletTransform.GetComponent<SpriteRenderer>();
@@ -41,7 +42,7 @@ public class Shooting : MonoBehaviour {
 
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
-        if (curAmmo < ammo && Input.GetKeyDown(KeyCode.R)) {
+        if (currentAmmo < ammo && Input.GetKeyDown(KeyCode.R)) {
             reload = true;
         }
         if (reload) {
@@ -72,6 +73,10 @@ public class Shooting : MonoBehaviour {
             if (currentAmmo <= 0) {
                 start_reload();
             }
+        }
+
+        if (currentAmmo < ammo && Input.GetKeyDown(KeyCode.E)) {
+            reload = true;
         }
     }
 
