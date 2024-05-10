@@ -22,8 +22,7 @@ public class BulletScript : MonoBehaviour {
         rb.velocity = new Vector2(direction.x, direction.y).normalized * speed;
     }
 
-    void Update()
-    {  
+    private void Update() {
         
     }
 

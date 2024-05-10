@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerVisual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerVisual.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +26,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,15 +38,15 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "C:\\Users\\Vasiliy\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\Vasiliy\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\Vasiliy\\AppData\\Local\\Symbols\\src"
+      "C:\\Users\\sasha\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\sasha\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\sasha\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity Editor\2022.3.28f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.28f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -56,7 +54,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity Editor\2022.3.28f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.28f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -94,8 +92,7 @@
       <updated>1715259270014</updated>
       <workItem from="1715259273181" duration="14000" />
       <workItem from="1715263379350" duration="372000" />
-      <workItem from="1715309607049" duration="459000" />
-      <workItem from="1715310093056" duration="1769000" />
+      <workItem from="1715310274527" duration="911000" />
     </task>
     <servers />
   </component>
