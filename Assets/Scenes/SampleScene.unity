@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08afd8f6291590a4eae7d6c0b338ec8f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1317342492}
+  player: {fileID: 141986012}
   ammoText_: {fileID: 24169561}
 --- !u!1 &24169558
 GameObject:
@@ -12251,6 +12251,17 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &141986012 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 63195951818154004, guid: f8ccb108d501f8a4da1e3026a668f192, type: 3}
+  m_PrefabInstance: {fileID: 1457956417}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d3a8e71d44f8d49b416d7a4b8f9ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &209514111
 GameObject:
   m_ObjectHideFlags: 0
@@ -12746,11 +12757,6 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
---- !u!1 &1317342492 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7438668748595994012, guid: f8ccb108d501f8a4da1e3026a668f192, type: 3}
-  m_PrefabInstance: {fileID: 1457956417}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1345332546
 GameObject:
   m_ObjectHideFlags: 0
