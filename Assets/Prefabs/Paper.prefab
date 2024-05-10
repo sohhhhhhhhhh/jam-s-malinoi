@@ -91,6 +91,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 827a0e5fba4b15e4fa25d29862ac372b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentPaperusImage: {fileID: 0}
+  PaperusImagesArray:
+  - {fileID: 21300000, guid: 56eabd6abe25ba345a0dac52e311ee28, type: 3}
+  - {fileID: 21300000, guid: 37fe54d04f6712543bfcdd1457d8567c, type: 3}
+  - {fileID: 21300000, guid: 0565afd48ec7f1d429f2f0e7c634b718, type: 3}
+  - {fileID: 21300000, guid: 435161ac838974d40ba4b3015ec434c5, type: 3}
+  - {fileID: 21300000, guid: bee85de1804e8354bac2e41c81a509b5, type: 3}
+  - {fileID: 21300000, guid: 8621208f72c342f4b9361f970bf1b9b2, type: 3}
+  - {fileID: 21300000, guid: a7be4e34ffc5e1747a91b659bba5109a, type: 3}
+  - {fileID: 21300000, guid: 58f9df0941122894ebd69c065b44300f, type: 3}
 --- !u!1 &3471870466444435518
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3919915460956975240, guid: 13c69ae136a364b4e8adc59ffe95630a, type: 3}
       propertyPath: m_Name
-      value: EnemyArcher Variant
+      value: EnemyArcher
       objectReference: {fileID: 0}
     - target: {fileID: 4235705070717122266, guid: 13c69ae136a364b4e8adc59ffe95630a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -94,4 +94,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11537fa0826770d40ab01f1610c4f971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 1231214689318641486, guid: ddf2c563dfa4a2c4f992c3fa2bdad6d5, type: 3}
+  fireRate: 0
   startingState: 1
