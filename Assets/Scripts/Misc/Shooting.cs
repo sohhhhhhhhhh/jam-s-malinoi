@@ -20,7 +20,7 @@ public class Shooting : MonoBehaviour {
     [SerializeField] private int reloadTime;
     public float timer;
     public float timeBetweenFiring;
-    [SerializeField]private int ammo = 7;
+    public int ammo = 7;
     
     public bool reload = false;
     public bool canFire = true;
@@ -89,5 +89,13 @@ public class Shooting : MonoBehaviour {
     private void end_reload() {
         reload = false;
         spriteRenderer.color = Color.white;
+    }
+
+    public int GetCurrentAmmo() {
+        return currentAmmo;
+    }
+
+    public int GetMaxAmmo() {
+        return ammo;
     }
 }

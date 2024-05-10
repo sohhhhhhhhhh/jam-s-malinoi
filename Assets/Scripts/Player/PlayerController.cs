@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
     
@@ -15,14 +16,20 @@ public class PlayerController : MonoBehaviour {
     private float minimalMovementSpeed = 0.1f;
     private bool isPlayerRunning = false;
 
-   
-    public int hp = 10;
+    public int maxHP = 20;
+    public int hp;
+    public HealthBar healthBar;
 
     private void Awake() {
         Instance = this;
 
         rb = GetComponent<Rigidbody2D>();
         _transform = GetComponent<Transform>();
+    }
+
+    private void Start() {
+        hp = maxHP;
+        healthBar.SetMaxHealth(maxHP);
     }
 
     private void FixedUpdate() {
@@ -64,9 +71,10 @@ public class PlayerController : MonoBehaviour {
 
     public void getDamage(int damage) {
         hp -= damage;
+        healthBar.SetHealth(hp);
         if (hp <= 0) {
             print("death");
-            // TODO
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
