@@ -23,7 +23,7 @@ public class BulletScript : MonoBehaviour {
     }
 
     private void Update() {
-        
+       
     }
 
     void OnTriggerEnter2D(Collider2D col) {
