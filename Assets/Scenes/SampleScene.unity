@@ -12250,7 +12250,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.043817874, y: 0}
@@ -12802,7 +12802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1317342498}
   meleeSpeed: 2
-  meleeDamage: 0
+  meleeDamage: 100
 --- !u!95 &1317342498 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 397351923344693073, guid: f8ccb108d501f8a4da1e3026a668f192, type: 3}
