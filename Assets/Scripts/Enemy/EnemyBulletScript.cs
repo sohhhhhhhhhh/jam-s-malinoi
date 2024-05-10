@@ -23,7 +23,7 @@ public class EnemyBulletScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.tag == "Player") {
             PlayerController.Instance.getDamage(damage);
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
 
         if (col.gameObject.tag != "Enemy") {
