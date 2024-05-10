@@ -30,8 +30,7 @@ public class weaponScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)) {
             if (currentWeaponIndex < totalWeapons-1) {
                 guns[currentWeaponIndex].SetActive(false);
-                currentWeaponIndex++;
-                guns[currentWeaponIndex].SetActive(true);
+                guns[++currentWeaponIndex].SetActive(true);
                 currentGun = guns[currentWeaponIndex];
             }
             else {
@@ -44,8 +43,7 @@ public class weaponScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q)) {
             if (currentWeaponIndex > 0) {
                 guns[currentWeaponIndex].SetActive(false);
-                currentWeaponIndex--;
-                guns[currentWeaponIndex].SetActive(true);
+                guns[--currentWeaponIndex].SetActive(true);
                 currentGun = guns[currentWeaponIndex];
             }
             else {

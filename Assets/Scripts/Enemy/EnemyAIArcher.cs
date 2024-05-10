@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class EnemyAIArcher : MonoBehaviour {
     public GameObject bullet;
@@ -14,12 +16,14 @@ public class EnemyAIArcher : MonoBehaviour {
     private NavMeshAgent _navMeshAgent;
     [SerializeField] private State startingState;
     private State _state;
-    private float _roamingDistanceMax = 3.0f;
+    private float _roamingDistanceMax = 7.0f;
     private float _roamingDistanceMin = 3.0f;
     private float _roamingTimerMax = 2.0f;
     private float _roamingTime;
     private Vector3 _roamPosition;
     private Vector3 _startingPosition;
+    // public GameObject rayPoint;
+    [SerializeField] private Transform transform;
     
     
     private enum State
@@ -62,6 +66,14 @@ public class EnemyAIArcher : MonoBehaviour {
                     _roamingTime = _roamingTimerMax;
                 }
                 break;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 3))
+        {
+            _roamingTime = -1;
         }
     }
 
