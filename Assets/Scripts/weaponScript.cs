@@ -38,7 +38,7 @@ public class weaponScript : MonoBehaviour
                 guns[currentWeaponIndex].SetActive(false);
                 currentWeaponIndex = 0;
                 guns[currentWeaponIndex].SetActive(true);
-                currentGun = guns[currentWeaponIndex]
+                currentGun = guns[currentWeaponIndex];
             }
         }
         if (Input.GetKeyDown(KeyCode.Q)) {
@@ -52,7 +52,7 @@ public class weaponScript : MonoBehaviour
                 guns[currentWeaponIndex].SetActive(false);
                 currentWeaponIndex = totalWeapons-1;
                 guns[currentWeaponIndex].SetActive(true);
-                currentGun = guns[currentWeaponIndex]
+                currentGun = guns[currentWeaponIndex];
             }
         }
     }
