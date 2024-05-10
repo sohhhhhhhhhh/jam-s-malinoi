@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: e645bb4505336f846b26c03d28a18cf6
+guid: 2b73fdedb9c6011448990b339dd685b6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -123,70 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: all textures2.1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b31f43e525dcce443ab9c07c83d548df
-      internalID: 1150062682
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: all textures2.1_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 444adf33f4aee27449e9998000655463
-      internalID: -1153158545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: all textures2.1_2
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d9c1d358a0f25a4583f8316873e91bf
-      internalID: 359303489
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: all textures2.1_3
+      name: 2mars texture2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c30cb63b73dac7748864b6222984ec85
-      internalID: 1750392985
+      spriteID: 83bed9a6179dcd44991422a6fd4c0037
+      internalID: 1860580547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: all textures2.1_4
+      name: 2mars texture2_1
       rect:
         serializedVersion: 2
         x: 128
@@ -221,35 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbb50ac1f07eccb49bbf0af5cd8a0818
-      internalID: -510048038
+      spriteID: de0aff3866f9e454db4066ef636a8a73
+      internalID: -941745488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: all textures2.1_5
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91ccce52bcaa7fc4abb64ae2c60d3947
-      internalID: 2118893808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: all textures2.1_6
+      name: 2mars texture2_2
       rect:
         serializedVersion: 2
         x: 0
@@ -263,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 866e5bade2184f14aa884ed2783713c4
-      internalID: -544617677
+      spriteID: 315ac1fb53510b14399baa54076ed8f8
+      internalID: -1881647675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: all textures2.1_7
+      name: 2mars texture2_3
       rect:
         serializedVersion: 2
         x: 128
@@ -284,29 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6afc5914b033a64478b620e0187e7065
-      internalID: -1422478993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: all textures2.1_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e15ef5f80bdec1444abc18363410e149
-      internalID: 63354641
+      spriteID: 7538602388e961543afb865eaf871838
+      internalID: 591921710
       vertices: []
       indices: 
       edges: []
@@ -314,7 +209,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: b5abdfc3c3cda974e9d35f2fddb9d8a7
+    spriteID: ce06c19482659e348a46309ffc6d14c1
     internalID: 0
     vertices: []
     indices: 
@@ -322,15 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      all textures2.1_0: 1150062682
-      all textures2.1_1: -1153158545
-      all textures2.1_2: 359303489
-      all textures2.1_3: 1750392985
-      all textures2.1_4: -510048038
-      all textures2.1_5: 2118893808
-      all textures2.1_6: -544617677
-      all textures2.1_7: -1422478993
-      all textures2.1_8: 63354641
+      2mars texture2_0: 1860580547
+      2mars texture2_1: -941745488
+      2mars texture2_2: -1881647675
+      2mars texture2_3: 591921710
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

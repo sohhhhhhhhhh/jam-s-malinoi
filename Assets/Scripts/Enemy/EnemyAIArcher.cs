@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAIArcher : MonoBehaviour {
-    // public GameObject bullet;
-    // public float fireRate;
-    // private float timer;
-    // private bool canFire = true;
+    public GameObject bullet;
+    public float fireRate;
+    private float timer;
+    private bool canFire = true;
     
     
     private NavMeshAgent _navMeshAgent;
@@ -38,16 +38,16 @@ public class EnemyAIArcher : MonoBehaviour {
 
     
     void Start() {
-        // timer = fireRate;
+        timer = fireRate;
         _startingPosition = transform.position;
     }
 
     void Update() {
-        // updateTimer();
-        // if (canFire) {
-        //     Instantiate(bullet, transform.position, Quaternion.identity);
-        //     canFire = false;
-        // }
+        updateTimer();
+        if (canFire) {
+            Instantiate(bullet, transform.position, Quaternion.identity);
+            canFire = false;
+        }
 
         switch (_state)
         {
@@ -65,15 +65,15 @@ public class EnemyAIArcher : MonoBehaviour {
         }
     }
 
-    // void updateTimer() {
-    //     if (!canFire) {
-    //         timer -= 1 * Time.deltaTime;
-    //         if (timer <= 0) {
-    //             canFire = true;
-    //             timer = fireRate;
-    //         }
-    //     }
-    // }
+    void updateTimer() {
+        if (!canFire) {
+            timer -= 1 * Time.deltaTime;
+            if (timer <= 0) {
+                canFire = true;
+                timer = fireRate;
+            }
+        }
+    }
 
     private void Roaming()
     {

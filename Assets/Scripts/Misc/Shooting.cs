@@ -7,21 +7,23 @@ using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class Shooting : MonoBehaviour {
-    public int reloadTime;
     public static Shooting Instance { get; private set; }
-    private Camera mainCam;
-    private Vector3 mousePos;
+    
+    private Camera mainCamera;
+    private Vector3 mousePosition;
     public Transform bulletTransform;
     public GameObject  bullet;
-    public bool canFire = true;
-    public float timer;
-    public float timeBetweenFiring;
-    public int ammo;
+    private SpriteRenderer spriteRenderer;
+
     private int currentAmmo;
     private float reloadTimer;
-    public bool reload = false;
-    private SpriteRenderer spriteRenderer;
+    public int reloadTime;
+    public float timer;
+    public float timeBetweenFiring;
+    private int ammo;
     
+    public bool reload = false;
+    public bool canFire = true;
     
     private void Awake() {
         Instance = this;
@@ -29,14 +31,14 @@ public class Shooting : MonoBehaviour {
 
     void Start() {
         reloadTimer = reloadTime;
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         currentAmmo = ammo;
         spriteRenderer = bulletTransform.GetComponent<SpriteRenderer>();
     }
 
     void Update() {
-        mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 rotation = mousePos - transform.position;
+        mousePosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 rotation = mousePosition - transform.position;
 
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
 

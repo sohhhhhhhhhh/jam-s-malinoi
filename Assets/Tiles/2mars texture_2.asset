@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 2mars texture_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -842577134, guid: 9c702a0ae9317b448b6dd6ee5e58072b, type: 3}
+  m_Sprite: {fileID: -1881647675, guid: 2b73fdedb9c6011448990b339dd685b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
