@@ -16,8 +16,8 @@ public class Shooting : MonoBehaviour {
     public float timer;
     public float timeBetweenFiring;
     public int ammo;
-    private int curAmmo;
-    public float reloadTimer = 5;
+    private int currentAmmo;
+    public float reloadTimer = 2;
     public bool reload = false;
     private SpriteRenderer spriteRenderer;
     
@@ -28,7 +28,7 @@ public class Shooting : MonoBehaviour {
 
     void Start() {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        curAmmo = ammo;
+        currentAmmo = ammo;
         spriteRenderer = bulletTransform.GetComponent<SpriteRenderer>();
     }
 
@@ -44,7 +44,7 @@ public class Shooting : MonoBehaviour {
             reloadTimer -= 1 * Time.deltaTime;
             if (reloadTimer <= 0) {
                 reloadTimer = reloadTime;
-                curAmmo = ammo;
+                currentAmmo = ammo;
                 end_reload();
             }
         }
@@ -64,8 +64,8 @@ public class Shooting : MonoBehaviour {
         if (Input.GetMouseButton(0) && canFire && !reload) {
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
             canFire = false;
-            curAmmo--;
-            if (curAmmo <= 0) {
+            currentAmmo--;
+            if (currentAmmo <= 0) {
                 start_reload();
             }
         }
