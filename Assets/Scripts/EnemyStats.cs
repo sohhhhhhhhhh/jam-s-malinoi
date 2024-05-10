@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class EnemyStats : MonoBehaviour {
@@ -19,5 +20,9 @@ public class EnemyStats : MonoBehaviour {
         if (hp <= 0) {
             Destroy(gameObject);
         }
+    }
+
+    public void setRepulsion() {
+        
     }
 }
