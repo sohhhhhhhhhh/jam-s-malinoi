@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour {
     
@@ -76,5 +77,8 @@ public class PlayerController : MonoBehaviour {
             print("death");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
+        new WaitForSeconds(5);
+        
     }
 }

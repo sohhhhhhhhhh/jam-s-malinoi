@@ -6,7 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyMelee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyMelee.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/AmmoText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AmmoText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyBulletScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Misc/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Misc/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/healthbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/healthbar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/shovel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/shovel.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,10 +28,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c1299b97f93e462095525f6626771dcad400/2b/80e90f71/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AmmoText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Misc/BulletScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Misc/Shooting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ReloadSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShovelAttack.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
@@ -42,20 +53,20 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CodeLensConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\mamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\mamin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\mamin\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\Vasiliy\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Vasiliy\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Vasiliy\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.28f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity Editor\2022.3.28f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -63,7 +74,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.28f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity Editor\2022.3.28f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="C:\Users\vitaz\OneDrive\Documentos\GitHub\jam-s-malinoi" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -108,6 +119,8 @@
       <workItem from="1715351897037" duration="103000" />
       <workItem from="1715352150332" duration="141000" />
       <workItem from="1715352301277" duration="3071000" />
+      <workItem from="1715364644149" duration="863000" />
+      <workItem from="1715365632083" duration="6039000" />
     </task>
     <servers />
   </component>

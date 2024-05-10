@@ -20,6 +20,6 @@ public class AmmoText : MonoBehaviour
     void Update()
     {
         currentAmmo_ = player.GetCurrentAmmo();
-        ammoText_.text = string.Format("ammo: {0}/{1}", currentAmmo_, maxAmmo);
+        ammoText_.text = string.Format("{0}/{1}", currentAmmo_, maxAmmo);
     }
 }
