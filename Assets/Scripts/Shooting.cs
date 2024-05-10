@@ -15,12 +15,12 @@ public class Shooting : MonoBehaviour {
     public GameObject  bullet;
     private SpriteRenderer spriteRenderer;
 
-    private int currentAmmo;
-    private float reloadTimer;
-    public int reloadTime;
+    public int currentAmmo;
+    public float reloadTimer;
+    [SerializeField] private int reloadTime;
     public float timer;
     public float timeBetweenFiring;
-    private int ammo;
+    [SerializeField]private int ammo = 7;
     
     public bool reload = false;
     public bool canFire = true;
