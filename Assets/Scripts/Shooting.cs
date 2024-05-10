@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class Shooting : MonoBehaviour {
-    public int reloadTime = 5;
     public static Shooting Instance { get; private set; }
     private Camera mainCam;
     private Vector3 mousePos;
@@ -17,7 +16,8 @@ public class Shooting : MonoBehaviour {
     public float timeBetweenFiring;
     public int ammo;
     private int curAmmo;
-    public float reloadTimer = 5;
+    private float reloadTimer;    
+    public float reloadTime = 2.5f;
     public bool reload = false;
     private SpriteRenderer spriteRenderer;
     
@@ -28,6 +28,7 @@ public class Shooting : MonoBehaviour {
 
     void Start() {
         mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        reloadTimer = reloadTime;
         curAmmo = ammo;
         spriteRenderer = bulletTransform.GetComponent<SpriteRenderer>();
     }
@@ -48,7 +49,6 @@ public class Shooting : MonoBehaviour {
                 end_reload();
             }
         }
-        
 
         if (!canFire) {
             timer += 1 * Time.deltaTime;
@@ -58,8 +58,11 @@ public class Shooting : MonoBehaviour {
             }
             
         }
-
         
+        if (Input.GetKey(KeyCode.R) && ammo != curAmmo)
+        { 
+            start_reload();
+        }
 
         if (Input.GetMouseButton(0) && canFire && !reload) {
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
