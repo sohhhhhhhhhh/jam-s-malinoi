@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class Shooting : MonoBehaviour {
@@ -39,7 +40,10 @@ public class Shooting : MonoBehaviour {
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
-        
+
+        if (curAmmo < ammo && Input.GetKeyDown(KeyCode.R)) {
+            reload = true;
+        }
         if (reload) {
             reloadTimer -= 1 * Time.deltaTime;
             if (reloadTimer <= 0) {
