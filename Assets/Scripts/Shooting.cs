@@ -18,7 +18,7 @@ public class Shooting : MonoBehaviour {
     public float timeBetweenFiring;
     public int ammo;
     private int currentAmmo;
-    public float reloadTimer;
+    private float reloadTimer;
     public bool reload = false;
     private SpriteRenderer spriteRenderer;
     
