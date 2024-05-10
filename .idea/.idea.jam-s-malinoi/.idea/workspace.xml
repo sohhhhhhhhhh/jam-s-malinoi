@@ -6,10 +6,29 @@
   <component name="ChangeListManager">
     <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyMelee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyMelee.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/all textures2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/all textures2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_0.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_0.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/all textures2_8.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/mars texture.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Tiles/mars texture.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/palettes/floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/palettes/floor.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
