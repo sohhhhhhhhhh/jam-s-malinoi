@@ -3,9 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class Shooting : MonoBehaviour {
+    public int reloadTime;
     public static Shooting Instance { get; private set; }
     private Camera mainCam;
     private Vector3 mousePos;
@@ -15,9 +17,8 @@ public class Shooting : MonoBehaviour {
     public float timer;
     public float timeBetweenFiring;
     public int ammo;
-    private int curAmmo;
-    private float reloadTimer;    
-    public float reloadTime = 2.5f;
+    private int currentAmmo;
+    private float reloadTimer;
     public bool reload = false;
     private SpriteRenderer spriteRenderer;
     
@@ -27,9 +28,9 @@ public class Shooting : MonoBehaviour {
     }
 
     void Start() {
-        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         reloadTimer = reloadTime;
-        curAmmo = ammo;
+        mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        currentAmmo = ammo;
         spriteRenderer = bulletTransform.GetComponent<SpriteRenderer>();
     }
 
@@ -40,15 +41,19 @@ public class Shooting : MonoBehaviour {
         float rotZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
 
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
-        
+
+        if (currentAmmo < ammo && Input.GetKeyDown(KeyCode.R)) {
+            reload = true;
+        }
         if (reload) {
             reloadTimer -= 1 * Time.deltaTime;
             if (reloadTimer <= 0) {
                 reloadTimer = reloadTime;
-                curAmmo = ammo;
+                currentAmmo = ammo;
                 end_reload();
             }
         }
+        
 
         if (!canFire) {
             timer += 1 * Time.deltaTime;
@@ -58,19 +63,20 @@ public class Shooting : MonoBehaviour {
             }
             
         }
+
         
-        if (Input.GetKey(KeyCode.R) && ammo != curAmmo)
-        { 
-            start_reload();
-        }
 
         if (Input.GetMouseButton(0) && canFire && !reload) {
             Instantiate(bullet, bulletTransform.position, Quaternion.identity);
             canFire = false;
-            curAmmo--;
-            if (curAmmo <= 0) {
+            currentAmmo--;
+            if (currentAmmo <= 0) {
                 start_reload();
             }
+        }
+
+        if (currentAmmo < ammo && Input.GetKeyDown(KeyCode.E)) {
+            reload = true;
         }
     }
 
