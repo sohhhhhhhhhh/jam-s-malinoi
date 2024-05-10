@@ -77,8 +77,6 @@ public class PlayerController : MonoBehaviour {
             print("death");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
-        new WaitForSeconds(5);
         
     }
 }
