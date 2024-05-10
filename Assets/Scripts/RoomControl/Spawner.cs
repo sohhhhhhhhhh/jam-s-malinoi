@@ -6,9 +6,9 @@ public class Spawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
 
-    public float timeSpawn = 5f;
+    public float timeSpawn;
     private float _timer;
-    public float distance = 3;
+    public float distance;
     private void Start()
     {
         _timer = timeSpawn;
