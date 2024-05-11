@@ -1117,7 +1117,7 @@ Transform:
   m_GameObject: {fileID: 7438668748595994012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.26, y: -4.05, z: 0}
+  m_LocalPosition: {x: -52.793205, y: 33.276684, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   isShovelGot: 0
   maxHP: 20
   hp: 20
-  healthBar: {fileID: 3956021770370898665, guid: 992f0a001d7b8f94fb53d7f342101a5e, type: 3}
+  healthBar: {fileID: 0}
 --- !u!50 &1489913733512574915
 Rigidbody2D:
   serializedVersion: 4
@@ -1162,7 +1162,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 21c21e130ec7e1d469467e06a7d697ae, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1252,10 +1252,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 397351923344693073}
-  meleeSpeed: 2
-  meleeDamage: 100
-  attackTime: 0
-  isAttacking: 0
+  meleeSpeed: 7
+  meleeDamage: 25
+  attackTime: 0.7
+  shovelBar: {fileID: 0}
 --- !u!1 &7910587641349949623
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class BulletScript : MonoBehaviour {
     private Rigidbody2D rb;
     public int damage;
     private EnemyStats ES;
+    private BossBehaviour BS;
     public float speed;
     
     void Start() {
@@ -30,12 +31,15 @@ public class BulletScript : MonoBehaviour {
         if (col.gameObject.tag == "Enemy") {
             ES = col.gameObject.GetComponent<EnemyStats>();
             ES.getDamage(damage);
-    
+        }
+        
+        if (col.gameObject.tag == "Boss") {
+            BS = col.gameObject.GetComponent<BossBehaviour>();
+            BS.GetDamage(damage);
         }
 
         if (col.gameObject.tag != "Player" && col.gameObject.tag != "Bullet") {
             Destroy(gameObject);
-            
         }
     }
 }
