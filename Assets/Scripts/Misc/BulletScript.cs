@@ -30,10 +30,12 @@ public class BulletScript : MonoBehaviour {
         if (col.gameObject.tag == "Enemy") {
             ES = col.gameObject.GetComponent<EnemyStats>();
             ES.getDamage(damage);
+    
         }
 
         if (col.gameObject.tag != "Player" && col.gameObject.tag != "Bullet") {
             Destroy(gameObject);
+            
         }
     }
 }

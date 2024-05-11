@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="" />
+    <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAIMelee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/EnemyAIMelee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Misc/BulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Misc/BulletScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +114,9 @@
       <workItem from="1715352301277" duration="3071000" />
       <workItem from="1715364644149" duration="863000" />
       <workItem from="1715365632083" duration="8480000" />
-      <workItem from="1715386133317" duration="669000" />
+      <workItem from="1715386133317" duration="2589000" />
+      <workItem from="1715391424796" duration="4210000" />
+      <workItem from="1715404163875" duration="2265000" />
     </task>
     <servers />
   </component>

@@ -41,4 +41,5 @@ public class EnemyAIMelee : MonoBehaviour
 
         rb.MovePosition(rb.position + (enemyMovementVector * (_enemySpeed * Time.fixedDeltaTime)));
     }
+    
 }
