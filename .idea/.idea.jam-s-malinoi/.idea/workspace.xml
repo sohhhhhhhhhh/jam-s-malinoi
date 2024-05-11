@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
-<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoomControl/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoomControl/Spawner.cs" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boss/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boss/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boss/AttackManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boss/AttackManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boss/BossBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boss/BossBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Boss/FirstAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Boss/FirstAttack.cs" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,25 +112,13 @@
       <workItem from="1715351773027" duration="14000" />
       <workItem from="1715351897037" duration="103000" />
       <workItem from="1715352150332" duration="141000" />
-<<<<<<< Updated upstream
       <workItem from="1715352301277" duration="1637000" />
       <workItem from="1715355221185" duration="5235000" />
       <workItem from="1715420897219" duration="6564000" />
       <workItem from="1715432607806" duration="1217000" />
       <workItem from="1715433859593" duration="1130000" />
       <workItem from="1715435015879" duration="2067000" />
-      <workItem from="1715437609863" duration="513000" />
-=======
-      <workItem from="1715352301277" duration="5154000" />
-      <workItem from="1715364644149" duration="863000" />
-      <workItem from="1715365632083" duration="8480000" />
-      <workItem from="1715388497236" duration="967000" />
-      <workItem from="1715421331640" duration="220000" />
-      <workItem from="1715421640287" duration="35000" />
-      <workItem from="1715421749925" duration="3764000" />
-      <workItem from="1715429072416" duration="5718000" />
-      <workItem from="1715437159641" duration="605000" />
->>>>>>> Stashed changes
+      <workItem from="1715437609863" duration="1839000" />
     </task>
     <servers />
   </component>

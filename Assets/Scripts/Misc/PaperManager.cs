@@ -9,6 +9,7 @@ public class PaperManager : MonoBehaviour
 
     public Image currentPaperusImage;
     public Image currentDiaryImage;
+    public Image pressEnter;
 
     public int paperCounter = 0;
 
@@ -53,6 +54,7 @@ public class PaperManager : MonoBehaviour
         currentDiaryColor.a = 255;
 
         currentDiaryImage.color = currentDiaryColor;
+        pressEnter.color = currentDiaryColor;
 
     }
 
@@ -61,5 +63,6 @@ public class PaperManager : MonoBehaviour
         currentDiaryColor = currentDiaryImage.color;
         currentDiaryColor.a = 0;
         currentDiaryImage.color = currentDiaryColor;
+        pressEnter.color = currentDiaryColor;
     }
 }
