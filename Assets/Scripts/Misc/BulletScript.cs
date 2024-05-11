@@ -32,7 +32,7 @@ public class BulletScript : MonoBehaviour {
             ES.getDamage(damage);
         }
 
-        if (col.gameObject.tag != "Player") {
+        if (col.gameObject.tag != "Player" && col.gameObject.tag != "Bullet") {
             Destroy(gameObject);
         }
     }

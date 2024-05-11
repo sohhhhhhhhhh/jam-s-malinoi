@@ -11,6 +11,8 @@ public class EnemyAIMelee : MonoBehaviour
     private Transform _transform;
     private NavMeshAgent _navMeshAgent;
     private Vector3 _startingPosition;
+    private float _attackRange = 5.0f;
+    private int _damage = 10;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,18 +29,18 @@ public class EnemyAIMelee : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // EnemyMovement();
         Vector3 playerPosition = PlayerController.Instance.GetPositionForEnemy();
         _navMeshAgent.SetDestination(playerPosition);
+
+        if (Physics.Raycast(transform.position, PlayerController.Instance.GetPositionForEnemy() - transform.position,
+                _attackRange))
+        {
+            Attack();
+        }
     }
 
-    private void EnemyMovement()
+    private void Attack()
     {
-        Vector2 playerPosition = PlayerController.Instance.GetPlayerPosition();
-        Vector2 enemyPosition = _transform.position;
-
-        Vector2 enemyMovementVector = (playerPosition - enemyPosition).normalized;
-
-        rb.MovePosition(rb.position + (enemyMovementVector * (_enemySpeed * Time.fixedDeltaTime)));
+        PlayerController.Instance.getDamage(_damage);
     }
 }
