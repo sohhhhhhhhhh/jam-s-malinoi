@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour {
 
     public static PlayerController Instance { get; private set; }
+    public GameObject gameOver;
+    
 
     private Rigidbody2D rb;
     private Transform _transform;
@@ -43,6 +45,14 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetKey(KeyCode.Return))
         {
             ChangeGameLevel();
+        }
+        if (hp <= 0) {
+            gameOver.SetActive(true);
+            if (Input.GetKey(KeyCode.Return))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                
+            }
         }
     }
 
@@ -84,9 +94,7 @@ public class PlayerController : MonoBehaviour {
         transform.GetChild(2).GetComponent<SpriteRenderer>().color = Color.red;
         hp -= damage;
         healthBar.SetHealth(hp);
-        if (hp <= 0) {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+       
     }
 
     private void AfterDamaged() {
