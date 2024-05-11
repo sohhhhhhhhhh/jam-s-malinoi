@@ -22,7 +22,6 @@ public class EnemyAIArcher : MonoBehaviour {
     private float _roamingTime;
     private Vector3 _roamPosition;
     private Vector3 _startingPosition;
-    // public GameObject rayPoint;
     [SerializeField] private Transform transform;
     
     
