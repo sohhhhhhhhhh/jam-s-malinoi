@@ -1,43 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
+using TreeEditor;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
     public GameObject[] enemyPrefabs;
     public GameObject pointPrefab;
-    private Vector2 delta;
-    private Vector2 spawnPosition;
-
-    public float timeSpawn;
-    private float _timer;
+    private Vector2 _delta;
+    private Vector2 _spawnPosition;
+    public int needEnemy;
     public float distance;
-    public int remainingEnemiesToSpawn;
-    private int prefabNumber;
-    private GameObject point;
-    
-    private void Start()
-    {
-        _timer = timeSpawn;
-    }
-    
+    private int _remainingEnemiesToSpawn;
+    private int _prefabNumber;
+    private GameObject _point;
+    private bool flag;
+    public int EnemyToThisRoom;
+
     private void Update()
     {
-        _timer -= Time.deltaTime;
-        if (_timer <= 0 && CloseTrigger.Instance.spawnStart && transform.childCount < 5 && remainingEnemiesToSpawn > 0)
+        if (transform.childCount == 0)
         {
-            prefabNumber = UnityEngine.Random.Range(0, 2);
-            remainingEnemiesToSpawn--;
-            _timer = timeSpawn;
-            delta = transform.position;
-            spawnPosition = Random.insideUnitCircle * distance + delta;
-            point = Instantiate(enemyPrefabs[prefabNumber], spawnPosition, Quaternion.identity) as GameObject;
-            Invoke("Spawn", 3f);
+            _remainingEnemiesToSpawn = needEnemy;
+        }
+
+        if ((_remainingEnemiesToSpawn != 0) && (EnemyToThisRoom > 0))
+        {
+            _prefabNumber = UnityEngine.Random.Range(0, 2);
+            _remainingEnemiesToSpawn--;
+            EnemyToThisRoom--;
+
+            _delta = transform.position;
+            _spawnPosition = Random.insideUnitCircle * distance + _delta;
+            _point = Instantiate(pointPrefab, _spawnPosition, Quaternion.identity, transform) as GameObject;
+            SpawnEnemy();
         }
     }
 
-    private void Spawn()
+    void SpawnEnemy()
     {
-        point = enemyPrefabs[prefabNumber];
+        
+        Destroy(_point);
+        Instantiate(enemyPrefabs[_prefabNumber], _spawnPosition, Quaternion.identity, transform);
     }
 }
