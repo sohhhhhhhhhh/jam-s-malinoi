@@ -6,8 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GOVNO.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GOVNO.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HealthBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HealthBar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Misc/PaperManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Misc/PaperManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoomControl/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoomControl/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +118,7 @@
       <workItem from="1715352150332" duration="141000" />
       <workItem from="1715352301277" duration="1637000" />
       <workItem from="1715355221185" duration="5235000" />
+      <workItem from="1715420897219" duration="6564000" />
     </task>
     <servers />
   </component>

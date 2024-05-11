@@ -39,6 +39,10 @@ public class PlayerController : MonoBehaviour {
         HandleMovement();
         AfterDamaged();
         
+        if (Input.GetKey(KeyCode.Return))
+        {
+            ChangeGameLevel();
+        }
     }
 
     private void HandleMovement() {
@@ -94,7 +98,11 @@ public class PlayerController : MonoBehaviour {
         
     }
 
-
+    private void ChangeGameLevel()
+    {
+        PaperManager.Instance.HideDiaryImage();
+        // TODO: ПЕРЕКЛЮЧЕНИЕ УРОВНЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+    }
 
 }
 
