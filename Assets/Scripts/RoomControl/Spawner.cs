@@ -46,7 +46,6 @@ public class Spawner : MonoBehaviour
             _spawn = false;
             Instantiate(paper, PlayerController.Instance.GetPlayerPosition(), Quaternion.identity);
             door.SetActive(false);
-            
         }
     }
 

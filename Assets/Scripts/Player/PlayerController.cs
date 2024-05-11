@@ -38,23 +38,31 @@ public class PlayerController : MonoBehaviour {
         healthBar.SetMaxHealth(maxHP);
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         HandleMovement();
         AfterDamaged();
-        
+
         if (Input.GetKey(KeyCode.Return))
         {
             ChangeGameLevel();
         }
-        if (hp <= 0) {
+
+        if (hp <= 0)
+        {
             gameOver.SetActive(true);
             if (Input.GetKey(KeyCode.Return))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                
+
             }
         }
-    }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("GameStart");
+        }
+}
 
     private void HandleMovement() {
         Vector2 inputVector = GameInput.Instance.GetMovementVector();
@@ -110,6 +118,15 @@ public class PlayerController : MonoBehaviour {
     private void ChangeGameLevel()
     {
         PaperManager.Instance.HideDiaryImage();
+        if (PaperManager.Instance.paperCounter == 5)
+        {
+            SceneManager.LoadScene("Level 2");
+        }
+
+        if (PaperManager.Instance.paperCounter == 8)
+        {
+            SceneManager.LoadScene("Level 3");
+        }
         // TODO: ПЕРЕКЛЮЧЕНИЕ УРОВНЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
     }
 

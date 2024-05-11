@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Misc/PaperManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Misc/PaperManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoomControl/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoomControl/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +118,7 @@
       <workItem from="1715432607806" duration="1217000" />
       <workItem from="1715433859593" duration="1130000" />
       <workItem from="1715435015879" duration="2067000" />
-      <workItem from="1715437609863" duration="513000" />
+      <workItem from="1715437609863" duration="1839000" />
     </task>
     <servers />
   </component>
