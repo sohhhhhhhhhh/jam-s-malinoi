@@ -15,7 +15,11 @@ public class Spawner : MonoBehaviour
     private int _prefabNumber;
     private GameObject _point;
     private bool flag;
+    private GameObject _enemy;
+    public GameObject paper;
     public int EnemyToThisRoom;
+    public CloseTrigger ct;
+    private bool _spawn = true;
 
     private void Update()
     {
@@ -24,9 +28,9 @@ public class Spawner : MonoBehaviour
             _remainingEnemiesToSpawn = needEnemy;
         }
 
-        if ((_remainingEnemiesToSpawn != 0) && (EnemyToThisRoom > 0))
+        if ((_remainingEnemiesToSpawn != 0) && (EnemyToThisRoom > 0) && ct.spawnStart)
         {
-            _prefabNumber = UnityEngine.Random.Range(0, 2);
+            _prefabNumber = UnityEngine.Random.Range(0, enemyPrefabs.Length);
             _remainingEnemiesToSpawn--;
             EnemyToThisRoom--;
 
@@ -35,11 +39,16 @@ public class Spawner : MonoBehaviour
             _point = Instantiate(pointPrefab, _spawnPosition, Quaternion.identity, transform) as GameObject;
             SpawnEnemy();
         }
+
+        if (EnemyToThisRoom == 0 && transform.childCount == 0 && _spawn)
+        {
+            _spawn = false;
+            Instantiate(paper, _spawnPosition, Quaternion.identity);
+        }
     }
 
     void SpawnEnemy()
     {
-        
         Destroy(_point);
         Instantiate(enemyPrefabs[_prefabNumber], _spawnPosition, Quaternion.identity, transform);
     }

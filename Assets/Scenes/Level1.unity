@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e97345f9f555ec41854dc50d03768e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1343096642}
   ammoText_: {fileID: 24169561}
 --- !u!1 &24169558
 GameObject:
@@ -12888,9 +12888,9 @@ MonoBehaviour:
   - {fileID: 6526420216249993490, guid: 7c29644c0ada05740ac54e9d7bab2b2e, type: 3}
   - {fileID: 3919915460956975240, guid: 13c69ae136a364b4e8adc59ffe95630a, type: 3}
   pointPrefab: {fileID: 7895029392393943336, guid: 517b827e4fe0a164aa338513dfc806f1, type: 3}
-  timeSpawn: 5
+  needEnemy: 0
   distance: 7
-  remainingEnemiesToSpawn: 5
+  EnemyToThisRoom: 0
 --- !u!224 &790017410 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4789727315448303533, guid: 992f0a001d7b8f94fb53d7f342101a5e, type: 3}
@@ -13189,6 +13189,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1343096642 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 63195951818154004, guid: 897d146ad46a0e4488bf0f13f8d8ca0f, type: 3}
+  m_PrefabInstance: {fileID: 300378947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d3a8e71d44f8d49b416d7a4b8f9ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1345332546
 GameObject:
   m_ObjectHideFlags: 0
@@ -20777,6 +20788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentPaperusImage: {fileID: 403100050}
+  currentDiaryImage: {fileID: 0}
   paperCounter: 0
   PaperusImagesArray:
   - {fileID: 21300000, guid: 56eabd6abe25ba345a0dac52e311ee28, type: 3}
@@ -20787,6 +20799,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8621208f72c342f4b9361f970bf1b9b2, type: 3}
   - {fileID: 21300000, guid: a7be4e34ffc5e1747a91b659bba5109a, type: 3}
   - {fileID: 21300000, guid: 58f9df0941122894ebd69c065b44300f, type: 3}
+  DiaryImagesArray: []
 --- !u!114 &1856941541
 MonoBehaviour:
   m_ObjectHideFlags: 0
