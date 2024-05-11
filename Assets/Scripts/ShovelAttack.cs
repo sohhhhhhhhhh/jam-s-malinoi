@@ -17,7 +17,7 @@ public class ShovelAttack : MonoBehaviour {
 
     void Update() {
         if (timeUntilMelee <= 0f) {
-            if (Input.GetKey(KeyCode.Space)) {
+            if (Input.GetKey(KeyCode.Space) && PlayerController.Instance.isShovelGot) {
                 anim.SetTrigger("Attack");
                 isAttacking = true;
                 timeUntilMelee = meleeSpeed;
