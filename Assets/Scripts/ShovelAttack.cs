@@ -10,38 +10,31 @@ public class ShovelAttack : MonoBehaviour {
     [SerializeField] private int meleeDamage;
     private EnemyStats ES;
     [SerializeField] private float attackTime;
-    public bool isAttacking = false;
+    public ShovelBarScript shovelBar;
 
     float timeUntilMelee;
-    void Start() { }
+
+    void Start() {
+        shovelBar.SetMaxTimer(meleeSpeed);
+    }
 
     void Update() {
+        shovelBar.SetTimer(meleeSpeed - timeUntilMelee);
         if (timeUntilMelee <= 0f) {
             if (Input.GetKey(KeyCode.Space) && PlayerController.Instance.isShovelGot) {
                 anim.SetTrigger("Attack");
-                isAttacking = true;
                 timeUntilMelee = meleeSpeed;
             }
         }
         else {
-            if (timeUntilMelee <= meleeSpeed - attackTime){
-                isAttacking = false;
-            }
             timeUntilMelee -= Time.deltaTime;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (isAttacking) {
-            if (other.tag == "Enemy")
-            {
-                ES = other.gameObject.GetComponent<EnemyStats>();
-                ES.getDamage(meleeDamage);
-            }
+        if (other.tag == "Enemy") {
+            ES = other.gameObject.GetComponent<EnemyStats>();
+            ES.getDamage(meleeDamage);
         }
-    }
-
-    public bool IsAttacking() {
-        return isAttacking;
     }
 }
