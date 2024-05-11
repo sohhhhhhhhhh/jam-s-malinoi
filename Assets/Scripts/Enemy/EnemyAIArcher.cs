@@ -11,8 +11,8 @@ public class EnemyAIArcher : MonoBehaviour {
     public float fireRate;
     private float timer;
     private bool canFire = true;
-    
-    
+
+
     private NavMeshAgent _navMeshAgent;
     [SerializeField] private State startingState;
     private State _state;
@@ -23,23 +23,21 @@ public class EnemyAIArcher : MonoBehaviour {
     private Vector3 _roamPosition;
     private Vector3 _startingPosition;
     [SerializeField] private Transform transform;
-    
-    
-    private enum State
-    {
+
+
+    private enum State {
         Idle,
         Roaming
     }
 
-    private void Awake()
-    {
+    private void Awake() {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _navMeshAgent.updateRotation = false;
         _navMeshAgent.updateUpAxis = false;
         _state = startingState;
     }
 
-    
+
     void Start() {
         timer = fireRate;
         _startingPosition = transform.position;
@@ -52,27 +50,22 @@ public class EnemyAIArcher : MonoBehaviour {
             canFire = false;
         }
 
-        switch (_state)
-        {
+        switch (_state) {
             default:
             case State.Idle:
                 break;
             case State.Roaming:
                 _roamingTime -= Time.deltaTime;
-                if (_roamingTime < 0)
-                {
+                if (_roamingTime < 0) {
                     Roaming();
                     _roamingTime = _roamingTimerMax;
                 }
-
                 break;
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 3))
-        {
+    private void FixedUpdate() {
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), 3)) {
             _roamingTime = -1;
         }
     }
@@ -87,14 +80,12 @@ public class EnemyAIArcher : MonoBehaviour {
         }
     }
 
-    private void Roaming()
-    {
+    private void Roaming() {
         _roamPosition = GetRoamingPosition();
         _navMeshAgent.SetDestination(_roamPosition);
     }
 
-    private Vector3 GetRoamingPosition()
-    {
+    private Vector3 GetRoamingPosition() {
         Vector3 randomVector = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
         return _startingPosition + randomVector * UnityEngine.Random.Range(_roamingDistanceMin, _roamingDistanceMax);
     }

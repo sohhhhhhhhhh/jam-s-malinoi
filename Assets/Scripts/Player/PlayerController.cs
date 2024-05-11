@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     private float minimalMovementSpeed = 0.1f;
     private bool isPlayerRunning = false;
     public bool damaged_recently = false;
+    public bool isShovelGot = false;
     private float red_timer = 0.3f;
 
     public int maxHP = 20;
@@ -39,6 +40,10 @@ public class PlayerController : MonoBehaviour {
         HandleMovement();
         AfterDamaged();
         
+        if (Input.GetKey(KeyCode.Return))
+        {
+            ChangeGameLevel();
+        }
     }
 
     private void HandleMovement() {
@@ -94,7 +99,11 @@ public class PlayerController : MonoBehaviour {
         
     }
 
-
+    private void ChangeGameLevel()
+    {
+        PaperManager.Instance.HideDiaryImage();
+        // TODO: ПЕРЕКЛЮЧЕНИЕ УРОВНЯ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+    }
 
 }
 
