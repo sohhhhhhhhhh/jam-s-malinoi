@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class BossBehaviour : MonoBehaviour
 {
-    private int _hp;
+    
+    // private static BossBehaviour Instance { get; private set; }
+    
+    private int _hp = 15;
     void Start()
     {
         
@@ -21,7 +24,7 @@ public class BossBehaviour : MonoBehaviour
         _hp -= damage;
         if (_hp <= 0)
         {
-            print("qWE");
+            Destroy(gameObject);
         }
     }
 }
