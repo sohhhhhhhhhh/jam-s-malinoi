@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack : MonoBehaviour
+public class AttackParent : MonoBehaviour
 {
     void Start()
     {
@@ -10,6 +10,11 @@ public class Attack : MonoBehaviour
     }
 
     void Update()
+    {
+        
+    }
+
+    void Attack()
     {
         
     }

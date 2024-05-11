@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossBehaviour : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class BossBehaviour : MonoBehaviour
         _hp -= damage;
         if (_hp <= 0)
         {
-            print("qWE");
+            SceneManager.LoadScene("");
         }
     }
 }
