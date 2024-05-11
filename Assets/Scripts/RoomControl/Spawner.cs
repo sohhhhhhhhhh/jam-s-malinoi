@@ -20,6 +20,7 @@ public class Spawner : MonoBehaviour
     public int EnemyToThisRoom;
     public CloseTrigger ct;
     private bool _spawn = true;
+    public GameObject door;
 
     private void Update()
     {
@@ -43,7 +44,9 @@ public class Spawner : MonoBehaviour
         if (EnemyToThisRoom == 0 && transform.childCount == 0 && _spawn)
         {
             _spawn = false;
-            Instantiate(paper, _spawnPosition, Quaternion.identity);
+            Instantiate(paper, PlayerController.Instance.GetPlayerPosition(), Quaternion.identity);
+            door.SetActive(false);
+            
         }
     }
 
