@@ -79253,6 +79253,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1357149680}
+    - target: {fileID: 3307932683762989795, guid: 897d146ad46a0e4488bf0f13f8d8ca0f, type: 3}
+      propertyPath: isShovelGot
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7438668748595994012, guid: 897d146ad46a0e4488bf0f13f8d8ca0f, type: 3}
       propertyPath: m_Name
       value: Player
