@@ -21,8 +21,5 @@ public class EnemyStats : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-
-    public void setRepulsion() {
-        
-    }
+    
 }
