@@ -1081,7 +1081,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -1176,6 +1176,8 @@ MonoBehaviour:
   anim: {fileID: 397351923344693073}
   meleeSpeed: 2
   meleeDamage: 100
+  attackTime: 0.7
+  isAttacking: 0
 --- !u!1 &7601448262926895464
 GameObject:
   m_ObjectHideFlags: 0

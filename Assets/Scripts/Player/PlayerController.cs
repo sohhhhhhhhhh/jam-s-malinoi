@@ -74,7 +74,6 @@ public class PlayerController : MonoBehaviour {
         hp -= damage;
         healthBar.SetHealth(hp);
         if (hp <= 0) {
-            print("death");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         
