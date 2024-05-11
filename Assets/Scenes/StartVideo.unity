@@ -534,7 +534,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2059245132}
-  - component: {fileID: 2059245131}
+  - component: {fileID: 2059245133}
   m_Layer: 0
   m_Name: Hueta
   m_TagString: Untagged
@@ -542,19 +542,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2059245131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059245130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 986f798ae1b6c5f43afb6b02a0cb503b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _videoPlayer: {fileID: 1077986858}
 --- !u!4 &2059245132
 Transform:
   m_ObjectHideFlags: 0
@@ -570,6 +557,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2059245133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059245130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10c61a144360abb46b7676525f110ae0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VideoPlayer: {fileID: 1077986858}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
