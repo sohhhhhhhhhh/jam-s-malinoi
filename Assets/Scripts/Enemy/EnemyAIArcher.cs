@@ -55,8 +55,8 @@ public class EnemyAIArcher : MonoBehaviour {
         switch (_state)
         {
             default:
-                case State.Idle:
-                    break;
+            case State.Idle:
+                break;
             case State.Roaming:
                 _roamingTime -= Time.deltaTime;
                 if (_roamingTime < 0)
@@ -64,6 +64,7 @@ public class EnemyAIArcher : MonoBehaviour {
                     Roaming();
                     _roamingTime = _roamingTimerMax;
                 }
+
                 break;
         }
     }
