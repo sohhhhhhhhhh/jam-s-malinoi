@@ -8,7 +8,7 @@ public class BossBehaviour : MonoBehaviour
     
     // private static BossBehaviour Instance { get; private set; }
     
-    private int _hp = 15;
+    private int _hp = 200;
     void Start()
     {
         

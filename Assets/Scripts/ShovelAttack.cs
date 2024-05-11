@@ -9,6 +9,7 @@ public class ShovelAttack : MonoBehaviour {
     [SerializeField] private float meleeSpeed;
     [SerializeField] private int meleeDamage;
     private EnemyStats ES;
+    private BossBehaviour BS;
     [SerializeField] private float attackTime;
     public ShovelBarScript shovelBar;
 
@@ -36,5 +37,11 @@ public class ShovelAttack : MonoBehaviour {
             ES = other.gameObject.GetComponent<EnemyStats>();
             ES.getDamage(meleeDamage);
         }
+        
+        if (other.gameObject.tag == "Boss") {
+            BS = other.gameObject.GetComponent<BossBehaviour>();
+            BS.GetDamage(meleeDamage);
+        }
+
     }
 }
