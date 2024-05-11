@@ -15,7 +15,9 @@ public class PlayerController : MonoBehaviour {
 
     private float _movementSpeed = 7.0f;
     private float minimalMovementSpeed = 0.1f;
+    
     private bool isPlayerRunning = false;
+    public bool isShovelGot = false;
 
     public int maxHP = 20;
     public int hp;
