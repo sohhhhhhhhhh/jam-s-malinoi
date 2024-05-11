@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="" />
+    <list default="true" id="0e1c2b68-1511-401e-a513-0543306f798c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.jam-s-malinoi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene/NavMesh-NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/palettes/floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/palettes/floor.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,7 +111,7 @@
       <workItem from="1715351897037" duration="103000" />
       <workItem from="1715352150332" duration="141000" />
       <workItem from="1715352301277" duration="1637000" />
-      <workItem from="1715355221185" duration="8000" />
+      <workItem from="1715355221185" duration="1132000" />
     </task>
     <servers />
   </component>
