@@ -1,87 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using UnityEngine;
 
 public class AttackManager : MonoBehaviour
 {
-    private Dictionary<AttackParent, float[]> AttackInfo;
-    [SerializeField]private FirstAttack _firstAttack;
-    private float[] xd;
-    private AttackParent[] _attacks;
-    private int currentAttackIndex = 0;
-    private float NumOfAttacks = 1;
-    private float NumOfWaves = 3;
-    private int WaveNum = 3;
-    private float remainingPatrons = 38;
-    private float timerWave = 3;
-    private float timeWave = 3;
-    private bool canWave;
-    private bool canAttack;
+    private int _attackIndex = 0;
+    private Attacks[] _attacks = {
+        new Attacks(
+            0.3f, //wavesDelay или задержка между каждой волной атаки
+            0f, // bulletDelay - задержка между выпуском каждой пули
+            0, //startAngel - стартовый угол для атаки
+            30, //deltaAngel - угол, на который происходит увеличение
+            360, //endAngel - угол, на котором заканчивается волна атаки
+            3, //waves - количество волн
+            15 //deltaWavesAngel - угол, на который сдвигается следующая волна атаки
+        )
+    };
 
-    private float timeUnderWave = 0.5f;
-    private float timerUnderWave = 0.5f;
-    private bool canUnderWave;
-
-    void Start() {
-        _attacks[0] = _firstAttack;
-        AttackInfo[_firstAttack] = new float[]
-        { NumOfWaves, NumOfAttacks, remainingPatrons, timerWave, timeWave, timerUnderWave, timeUnderWave };
-    }
-
-    void Update() {
-        updateVariable();
-        if (!canWave) {
-            UpdateWaveTimer();
-        }
-
-        if (!canUnderWave) {
-            UpdateUnderWaveTimer();
-        }
-
-        if (canWave && canUnderWave)
-        {
-            _firstAttack.Attack((remainingPatrons / 13) * 15);
-            remainingPatrons--;
-            if (remainingPatrons <= 0) {
-                canWave = false;
-                remainingPatrons = 38;
-            }
-
-            if (remainingPatrons % 13 == 0) {
-                canUnderWave = false;
-                if (remainingPatrons == 0) {
-                    currentAttackIndex = UnityEngine.Random.Range(0, (int)NumOfAttacks - 1);
-                }
-            }
-        }
-    }
-
-    void UpdateWaveTimer() {
-        timerWave -= Time.deltaTime;
-        if (timerWave <= 0) {
-            canWave = true;
-            timerWave = timeWave;
-        }
-    }
-
-    void UpdateUnderWaveTimer() {
-        timerUnderWave -= Time.deltaTime;
-        if (timerUnderWave <= 0) {
-            canUnderWave = true;
-            timerUnderWave = timeUnderWave;
-        }
-    }
-
-    void updateVariable()
+    private void Start()
     {
-        xd = AttackInfo[_attacks[currentAttackIndex]];
+        print(_attackIndex);
+        _attacks[_attackIndex].StartAttack();
+    }
 
-        NumOfWaves = xd[0];
-        NumOfAttacks = xd[1];
-        remainingPatrons = xd[2];
-        timerWave = xd[3];
-        timeWave = xd[4];
-        timerUnderWave = xd[5];
-        timeUnderWave = xd[6];
+    private void checkAttackStart()
+    {
+
+    }
+
+    private void startAttack() {
+
     }
 }
