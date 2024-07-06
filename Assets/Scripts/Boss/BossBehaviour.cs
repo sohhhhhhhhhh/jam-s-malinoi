@@ -2,19 +2,7 @@ using UnityEngine;
 
 public class BossBehaviour : MonoBehaviour
 {
-    
-    // private static BossBehaviour Instance { get; private set; }
-    
-    private int _hp = 200;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    private int _hp = 20;
 
     public void GetDamage(int damage)
     {

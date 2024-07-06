@@ -15,7 +15,6 @@ public class BossBullet : MonoBehaviour
     private Vector3 _direction;
     private Renderer _renderer;
 
-    [SerializeField] private BossBullet _bullet;
     private BossBullet spawnedBullet;
     private Vector3 BulletDirection;
 
@@ -41,6 +40,7 @@ public class BossBullet : MonoBehaviour
     }
 
     private void Start() {
+        print("wagag");
         Instance = this;
         if (!_IsBig) {
             print("Start");
@@ -78,22 +78,6 @@ public class BossBullet : MonoBehaviour
     }
 
     private void OnDestroy() {
-        if (IsNotKilledByPlayer && _IsBig) {
-            SplitItself();
-        }
         Destroy(gameObject);
-    }
-
-    private void SplitItself()
-    {
-        endAngel = startAngel + deltaAngel;
-        Instance = this;
-        for (_currentAngel = startAngel; _currentAngel < endAngel; _currentAngel += deltaAngel) {
-            BulletDirection = new Vector3(MathF.Sin((_currentAngel) * Mathf.Deg2Rad),
-                MathF.Cos((_currentAngel) * Mathf.Deg2Rad), 0);
-            spawnedBullet = Instantiate(_bullet, transform.position, Quaternion.identity);
-            spawnedBullet.SetType(false);
-            spawnedBullet.SetDirection(BulletDirection);
-        }
     }
 }

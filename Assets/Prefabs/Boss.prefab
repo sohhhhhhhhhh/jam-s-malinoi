@@ -13,8 +13,10 @@ GameObject:
   - component: {fileID: 3611709144925031116}
   - component: {fileID: 1972861044712627971}
   - component: {fileID: -812034409075917180}
-  - component: {fileID: -8203767848101084692}
   - component: {fileID: 7679877296798066549}
+  - component: {fileID: 1911727774188274947}
+  - component: {fileID: 874508778639693232}
+  - component: {fileID: 3978815259750296128}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -172,27 +174,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8203767848101084692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5910639586314911093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c625da639c5f3c44e8733b516feee8fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bullet: {fileID: -3429896664533318476, guid: b83de4a9edea79c4dafe02eb5640b331, type: 3}
-  attacksDelay: 0
-  wavesDelay: 0.3
-  startAngel: 0
-  deltaAngel: 30
-  endAngel: 360
-  currentAngel: 0
-  waves: 5
-  deltaWaveAngel: 15
 --- !u!114 &7679877296798066549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,3 +186,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eea8e5b86620324789991eb23e1951b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1911727774188274947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910639586314911093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0556c901f631a1249a8389ce1d4e8c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: -3429896664533318476, guid: b83de4a9edea79c4dafe02eb5640b331, type: 3}
+--- !u!114 &874508778639693232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910639586314911093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c625da639c5f3c44e8733b516feee8fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3978815259750296128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910639586314911093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0556c901f631a1249a8389ce1d4e8c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: -3429896664533318476, guid: b83de4a9edea79c4dafe02eb5640b331, type: 3}

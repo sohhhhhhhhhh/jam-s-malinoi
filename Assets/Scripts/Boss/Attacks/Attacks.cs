@@ -5,7 +5,8 @@ using UnityEngine;
 public class Attacks : MonoBehaviour
 {
     private BossBullet _bullet;
-    [SerializeField] private BossBullet spawnedBullet;
+    private BossBullet spawnedBullet;
+
     private Vector3 BulletDirection;
 
     private bool isAttacking = false;
@@ -38,13 +39,34 @@ public class Attacks : MonoBehaviour
         _deltaWaveAngel = deltaWaveAngel;
     }
 
+    public void SetAttacksSettings(
+        float wavesDelay,
+        float bulletDelay,
+        float startAngel,
+        float deltaAngel,
+        float endAngel,
+        int waves,
+        float deltaWaveAngel,
+        BossBullet bullet
+    )
+    {
+        _wavesDelay = wavesDelay;
+        _bulletDelay = bulletDelay;
+        _startAngel = startAngel;
+        _deltaAngel = deltaAngel;
+        _endAngel = endAngel;
+        _currentAngel = startAngel;
+        _waves = waves;
+        _deltaWaveAngel = deltaWaveAngel;
+        _bullet = bullet;
+    }
+
     public void StartAttack() {
         StartCoroutine(Attack());
     }
 
     public IEnumerator Attack()
     {
-        print("QWE");
         for (int attackTicIndex = 0; attackTicIndex < _waves; attackTicIndex++)
         {
             for (_currentAngel = _startAngel; _currentAngel < _endAngel; _currentAngel += _deltaAngel)
@@ -52,8 +74,8 @@ public class Attacks : MonoBehaviour
                 BulletDirection = new Vector3(MathF.Sin((_currentAngel + _deltaWaveAngel * attackTicIndex) * Mathf.Deg2Rad),
                     MathF.Cos((_currentAngel + _deltaWaveAngel * attackTicIndex) * Mathf.Deg2Rad), 0);
                 spawnedBullet = Instantiate(_bullet, transform.position + BulletDirection, Quaternion.identity);
-                spawnedBullet.SetType(false);
                 spawnedBullet.SetDirection(BulletDirection);
+
                 yield return new WaitForSeconds(_bulletDelay);
             }
 
