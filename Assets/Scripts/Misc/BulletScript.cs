@@ -1,10 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using UnityEditor.UI;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class BulletScript : MonoBehaviour {
     private Vector3 mousePos;

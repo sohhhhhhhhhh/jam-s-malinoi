@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -6,8 +5,10 @@ public class AttackManager : MonoBehaviour
 {
     [SerializeField] private BossBullet bullet;
     private float _timer;
+    private int _range;
     private int _attackIndex;
     private Attacks[] _attacks = new Attacks[5];
+    private int _numOfAttacks = 3;
 
     private float[] _timerDelaysForEachAttacks = {
         10f, 10f, 1f
@@ -37,8 +38,8 @@ public class AttackManager : MonoBehaviour
             15, //deltaWavesAngel - угол, на который сдвигается следующая волна атаки
             bullet
         );
-        _attacks[2] = gameObject.AddComponent<Attacks>();
-        _attacks[2].SetAttacksSettings(
+        _attacks[_numOfAttacks - 1] = gameObject.AddComponent<Attacks>();
+        _attacks[_numOfAttacks - 1].SetAttacksSettings(
             0.5f, //wavesDelay или задержка между каждой волной атаки
             0f, // bulletDelay - задержка между выпуском каждой пули
             0, //startAngel - стартовый угол для атаки
@@ -51,11 +52,6 @@ public class AttackManager : MonoBehaviour
         _timer = _timerDelaysForEachAttacks[_attackIndex];
     }
 
-    private void Start()
-    {
-        throw new NotImplementedException();
-    }
-
     private void Update()
     {
         _timer -= Time.deltaTime;
@@ -63,7 +59,8 @@ public class AttackManager : MonoBehaviour
         {
             _timer = _timerDelaysForEachAttacks[_attackIndex];
             _attacks[_attackIndex].StartAttack();
-            _attackIndex = Random.Range(0, 3);
+            _range = _attackIndex == _numOfAttacks - 1 ? _numOfAttacks - 1 : _numOfAttacks;
+            _attackIndex = Random.Range(0, _range);
         }
     }
 }
