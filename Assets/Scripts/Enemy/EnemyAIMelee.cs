@@ -37,21 +37,24 @@ public class EnemyAIMelee : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 playerPosition = PlayerController.Instance.GetPositionForEnemy();
-        _navMeshAgent.SetDestination(playerPosition);
-        if (_IsKnockBacked)
+        if (!PlayerController.Instance.isDead)
         {
-            _knockbackTimer -= Time.fixedDeltaTime;
-            if (_knockbackTimer <= 0f)
+            Vector3 playerPosition = PlayerController.Instance.GetPositionForEnemy();
+            _navMeshAgent.SetDestination(playerPosition);
+            if (_IsKnockBacked)
             {
-                _knockbackTimer = _knockbackTime;
-                _IsKnockBacked = false;
+                _knockbackTimer -= Time.fixedDeltaTime;
+                if (_knockbackTimer <= 0f)
+                {
+                    _knockbackTimer = _knockbackTime;
+                    _IsKnockBacked = false;
+                }
             }
-        }
 
-        _navMeshAgent.isStopped = _IsKnockBacked;
-        
-        if (!_canAttack) UpdateTimer();
+            _navMeshAgent.isStopped = _IsKnockBacked;
+
+            if (!_canAttack) UpdateTimer();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

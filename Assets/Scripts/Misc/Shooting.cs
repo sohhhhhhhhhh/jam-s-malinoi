@@ -1,4 +1,12 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
+using Slider = UnityEngine.UI.Slider;
+
 public class Shooting : MonoBehaviour {
     public static Shooting Instance { get; private set; }
     

@@ -1142,7 +1142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOver: {fileID: 8868869300911153671, guid: 95b52190884232e439e3010e3117c844, type: 3}
   damaged_recently: 0
-  isShovelGot: 1
+  isShovelGot: 0
   maxHP: 20
   hp: 20
   healthBar: {fileID: 0}

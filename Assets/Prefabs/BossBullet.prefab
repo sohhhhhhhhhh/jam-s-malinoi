@@ -161,8 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06c3d32444dac1e408f7f6b64bb851d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Direction: {x: 0, y: 0}
   speed: 10
   damage: 1
-  startAngel: 0
-  deltaAngel: 30
-  endAngel: 360
