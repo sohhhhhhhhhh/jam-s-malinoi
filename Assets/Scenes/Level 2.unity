@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -64398,7 +64397,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07827377, y: 0.24647665}
+  m_Offset: {x: 0.07827377, y: 1.0437293}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -64409,7 +64408,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5354843, y: 0.5070467}
+  m_Size: {x: 2.5354843, y: 0.22171497}
   m_EdgeRadius: 0
 --- !u!114 &463198669
 MonoBehaviour:
@@ -68272,7 +68271,7 @@ Transform:
   m_GameObject: {fileID: 1391274356}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.4, y: -2.8, z: 0}
+  m_LocalPosition: {x: 37.16, y: -2.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68290,10 +68289,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e41b4a5db0d2fd6479a6c6cf1bbcfcac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefabs: []
+  enemyPrefabs:
+  - {fileID: 3919915460956975240, guid: 13c69ae136a364b4e8adc59ffe95630a, type: 3}
+  - {fileID: 6526420216249993490, guid: 7c29644c0ada05740ac54e9d7bab2b2e, type: 3}
   pointPrefab: {fileID: 7895029392393943336, guid: 517b827e4fe0a164aa338513dfc806f1, type: 3}
   needEnemy: 7
-  distance: 6
+  distance: 7
   paper: {fileID: 2719273020538409650, guid: f2110b3c05810f74bad27419028be5a6, type: 3}
   EnemyToThisRoom: 21
   ct: {fileID: 1894377894}
@@ -78793,7 +78794,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.29705477, y: 0.19976306}
+  m_Offset: {x: -0.34596014, y: 0.19976306}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -78804,7 +78805,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50363827, y: 2.4268794}
+  m_Size: {x: 0.3493147, y: 2.4268794}
   m_EdgeRadius: 0
 --- !u!114 &1419961336
 MonoBehaviour:
@@ -79071,7 +79072,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.10046005, y: 0.2381568}
+  m_Offset: {x: 0.6518812, y: 0.041220665}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -79082,7 +79083,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5798569, y: 0.490407}
+  m_Size: {x: 3.6826992, y: 0.09653473}
   m_EdgeRadius: 0
 --- !u!114 &1525568664
 MonoBehaviour:
@@ -79584,7 +79585,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.024163246, y: 0.048071384}
+  m_Offset: {x: -0.83195734, y: -0.08710563}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -79595,7 +79596,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6476288, y: 2.5632458}
+  m_Size: {x: 0.30518055, y: 3.2661655}
   m_EdgeRadius: 0
 --- !u!114 &1706185122
 MonoBehaviour:
@@ -80752,7 +80753,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.3793168, y: 0.19976306}
+  m_Offset: {x: 1.3150153, y: 0.16118217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -80763,7 +80764,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48632145, y: 2.4268794}
+  m_Size: {x: 0.40915775, y: 3.275659}
   m_EdgeRadius: 0
 --- !u!114 &1894377894
 MonoBehaviour:
@@ -80805,7 +80806,7 @@ Transform:
   m_GameObject: {fileID: 1955535847}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.93, y: -3.77, z: 0}
+  m_LocalPosition: {x: -23.59, y: -1.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -80828,7 +80829,7 @@ MonoBehaviour:
   - {fileID: 3919915460956975240, guid: 13c69ae136a364b4e8adc59ffe95630a, type: 3}
   pointPrefab: {fileID: 7895029392393943336, guid: 517b827e4fe0a164aa338513dfc806f1, type: 3}
   needEnemy: 5
-  distance: 6
+  distance: 7
   paper: {fileID: 2719273020538409650, guid: f2110b3c05810f74bad27419028be5a6, type: 3}
   EnemyToThisRoom: 15
   ct: {fileID: 1525568664}
@@ -80898,7 +80899,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07827377, y: 0.24647665}
+  m_Offset: {x: 0.016587257, y: 0.6988373}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -80909,7 +80910,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5354843, y: 0.5070467}
+  m_Size: {x: 2.9467258, y: 0.2603016}
   m_EdgeRadius: 0
 --- !u!114 &1970700497
 MonoBehaviour:
@@ -81178,7 +81179,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.047836304, y: 0}
+  m_Offset: {x: 2.0569572, y: -0.76388454}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -81189,7 +81190,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7030487, y: 1}
+  m_Size: {x: 6.7212906, y: 0.2256527}
   m_EdgeRadius: 0
 --- !u!4 &2118139949
 Transform:

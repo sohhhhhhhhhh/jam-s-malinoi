@@ -31,7 +31,7 @@ public class BossBehaviour : MonoBehaviour
     {
         _timer -= Time.deltaTime;
         print(_timer);
-        if (_timer < 0)
+        // if (_timer < 0)
         {
             if (_currentDirectionIndex + 1 < 4)
             {
