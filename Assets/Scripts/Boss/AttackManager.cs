@@ -10,7 +10,7 @@ public class AttackManager : MonoBehaviour
     private Attacks[] _attacks = new Attacks[5];
 
     private float[] _timerDelaysForEachAttacks = {
-        5f, 10f
+        10f, 10f, 1f
     };
 
     private void Awake()
@@ -37,6 +37,16 @@ public class AttackManager : MonoBehaviour
             15, //deltaWavesAngel - угол, на который сдвигается следующая волна атаки
             bullet
         );
+        _attacks[2].SetAttacksSettings(
+            0.5f, //wavesDelay или задержка между каждой волной атаки
+            0f, // bulletDelay - задержка между выпуском каждой пули
+            0, //startAngel - стартовый угол для атаки
+            90f, //deltaAngel - угол, на который происходит увеличение
+            360, //endAngel - угол, на котором заканчивается волна атаки
+            10, //waves - количество волн
+            45, //deltaWavesAngel - угол, на который сдвигается следующая волна атаки
+            bullet
+        );
         _timer = _timerDelaysForEachAttacks[_attackIndex];
     }
 
@@ -52,7 +62,7 @@ public class AttackManager : MonoBehaviour
         {
             _timer = _timerDelaysForEachAttacks[_attackIndex];
             _attacks[_attackIndex].StartAttack();
-            _attackIndex = Random.Range(0, 2);
+            _attackIndex = Random.Range(0, 3);
         }
     }
 }

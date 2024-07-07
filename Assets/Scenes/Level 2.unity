@@ -65433,32 +65433,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -8203767848101084692, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5910639586314911093, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1362046173}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
---- !u!1 &1362046172 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5910639586314911093, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
-  m_PrefabInstance: {fileID: 1362046171}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1362046173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362046172}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0556c901f631a1249a8389ce1d4e8c8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1380200711
 GameObject:
   m_ObjectHideFlags: 0
@@ -79306,10 +79285,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1357149680}
-    - target: {fileID: 3307932683762989795, guid: 897d146ad46a0e4488bf0f13f8d8ca0f, type: 3}
-      propertyPath: isShovelGot
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7438668748595994012, guid: 897d146ad46a0e4488bf0f13f8d8ca0f, type: 3}
       propertyPath: m_Name
       value: Player

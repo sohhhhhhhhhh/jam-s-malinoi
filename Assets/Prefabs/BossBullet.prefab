@@ -163,7 +163,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   damage: 1
-  _bullet: {fileID: -3429896664533318476}
   startAngel: 0
   deltaAngel: 30
   endAngel: 360
