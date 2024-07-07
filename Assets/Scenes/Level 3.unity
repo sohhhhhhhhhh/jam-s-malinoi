@@ -63782,7 +63782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 3919915460956975240, guid: 13c69ae136a364b4e8adc59ffe95630a, type: 3}
-  distance: 6
+  distance: 10
   _BossBehaviour: {fileID: 1667015913}
 --- !u!1 &85626761
 GameObject:
@@ -88597,6 +88597,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -812034409075917180, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -812034409075917180, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -812034409075917180, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972861044712627971, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3029974231640817994, guid: 5c9628b08d884f2459cfcbabd4b6a414, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.61

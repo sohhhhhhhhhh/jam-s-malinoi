@@ -11,10 +11,11 @@ public class SpawnerBossRoom : MonoBehaviour
     public float distance;
     private float _timer;
     public BossBehaviour _BossBehaviour;
+    private int _countToSpawn;
     
     void Start()
     {
-        _timer = 8f;
+        _timer = 7f;
     }
 
     // Update is called once per frame
@@ -23,11 +24,14 @@ public class SpawnerBossRoom : MonoBehaviour
         _timer -= 1 * Time.deltaTime;
         if (_timer <= 0 && transform.childCount <= 4 && _BossBehaviour.hp > 0)
         {
-            _timer = UnityEngine.Random.Range(5, 8);
-            
+            _timer = UnityEngine.Random.Range(8, 12);
+            _countToSpawn = UnityEngine.Random.Range(1, 3);
             _delta = transform.position;
             _spawnPosition = Random.insideUnitCircle * distance + _delta;
-            SpawnEnemy();
+            for (int i = 0; i < _countToSpawn; i++)
+            {
+                SpawnEnemy();
+            }
         }
     }
 

@@ -5,7 +5,6 @@ using UnityEngine.AI;
 public class BossBehaviour : MonoBehaviour
 {
     public int hp = 20;
-    
     private float _timer;
     private float _speed = 2f;
     private float _changeDirectionCooldown = 2;
@@ -30,8 +29,8 @@ public class BossBehaviour : MonoBehaviour
     private void Update()
     {
         _timer -= Time.deltaTime;
-        print(_timer);
-        // if (_timer < 0)
+        // print(_timer);
+        if (_timer < 0)
         {
             if (_currentDirectionIndex + 1 < 4)
             {
@@ -52,6 +51,14 @@ public class BossBehaviour : MonoBehaviour
         if (hp <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+    
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "Player")
+        {
+            other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - transform.position).normalized * 8f, ForceMode2D.Impulse);
+            PlayerController.Instance.getDamage(3);
         }
     }
 }
