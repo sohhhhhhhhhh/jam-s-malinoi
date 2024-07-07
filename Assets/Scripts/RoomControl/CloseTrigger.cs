@@ -13,7 +13,7 @@ public class CloseTrigger : MonoBehaviour
         Instance = this;
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player")) {
+        if (other.CompareTag("Player") && !spawnStart) {
             closeDoor.SetActive(true);
             spawnStart = true;
         }
