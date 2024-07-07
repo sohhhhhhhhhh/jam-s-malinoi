@@ -37,6 +37,7 @@ public class AttackManager : MonoBehaviour
             15, //deltaWavesAngel - угол, на который сдвигается следующая волна атаки
             bullet
         );
+        _attacks[2] = gameObject.AddComponent<Attacks>();
         _attacks[2].SetAttacksSettings(
             0.5f, //wavesDelay или задержка между каждой волной атаки
             0f, // bulletDelay - задержка между выпуском каждой пули
