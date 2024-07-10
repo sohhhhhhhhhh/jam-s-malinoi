@@ -5,6 +5,7 @@ using UnityEngine.AI;
 public class BossBehaviour : MonoBehaviour
 {
     public int hp = 20;
+    public BossBar bossBar;
     private float _timer;
     private float _speed = 2f;
     private float _changeDirectionCooldown = 3;
@@ -23,6 +24,7 @@ public class BossBehaviour : MonoBehaviour
 
     private void Start()
     {
+        bossBar.SetMaxHealth(hp);
         _rb.velocity = _moveDirections[_currentDirectionIndex] * _speed;
     }
 
@@ -47,6 +49,7 @@ public class BossBehaviour : MonoBehaviour
     public void GetDamage(int damage)
     {
         hp -= damage;
+        bossBar.SetHealth(hp);
         if (hp <= 0)
         {
             Destroy(gameObject);
