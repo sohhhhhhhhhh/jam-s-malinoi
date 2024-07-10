@@ -52,4 +52,12 @@ public class BossBehaviour : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            PlayerController.Instance.getDamage(3);
+        }
+    }
 }
