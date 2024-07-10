@@ -4,7 +4,7 @@ using UnityEngine.AI;
 
 public class BossBehaviour : MonoBehaviour
 {
-    private int _hp = 20;
+    public int hp = 20;
     private float _timer;
     private float _speed = 2f;
     private float _changeDirectionCooldown = 2;
@@ -46,8 +46,8 @@ public class BossBehaviour : MonoBehaviour
 
     public void GetDamage(int damage)
     {
-        _hp -= damage;
-        if (_hp <= 0)
+        hp -= damage;
+        if (hp <= 0)
         {
             Destroy(gameObject);
         }
