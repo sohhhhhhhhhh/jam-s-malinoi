@@ -4,7 +4,7 @@ using UnityEngine.AI;
 
 public class BossBehaviour : MonoBehaviour
 {
-    public int hp = 20;
+    public int hp = 300;
     public BossBar bossBar;
     private float _timer;
     private float _speed = 2f;

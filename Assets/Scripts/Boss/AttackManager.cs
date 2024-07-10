@@ -11,7 +11,7 @@ public class AttackManager : MonoBehaviour
     private int _numOfAttacks = 3;
 
     private float[] _timerDelaysForEachAttacks = {
-        10f, 10f, 1f
+        4f, 6f, 1f
     };
 
     private void Awake()
