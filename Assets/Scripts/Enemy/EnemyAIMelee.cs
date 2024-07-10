@@ -61,7 +61,7 @@ public class EnemyAIMelee : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             _IsKnockBacked = true;
-            other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - transform.position).normalized * 4f, ForceMode2D.Impulse);
+            other.GetComponent<Rigidbody2D>().AddForce((other.transform.position - transform.position).normalized * 1.5f, ForceMode2D.Impulse);
             rb.AddForce((transform.position - other.transform.position).normalized * 4f, ForceMode2D.Impulse);
             
             if (_canAttack)

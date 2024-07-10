@@ -98780,6 +98780,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 21c21e130ec7e1d469467e06a7d697ae, type: 2}
+    - target: {fileID: 1489913733512574915, guid: 897d146ad46a0e4488bf0f13f8d8ca0f, type: 3}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2358495062976975154, guid: 897d146ad46a0e4488bf0f13f8d8ca0f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -52.793205
