@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
     public bool isShovelGot = false;
     private float red_timer = 0.3f;
 
-    public int maxHP = 20;
+    private int maxHP = 50;
     public int hp;
     public HealthBar healthBar;
     public bool isDead = false;
