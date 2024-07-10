@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ShovelAttack : MonoBehaviour {
@@ -8,7 +9,8 @@ public class ShovelAttack : MonoBehaviour {
     private BossBehaviour BS;
     [SerializeField] private float attackTime;
     public ShovelBarScript shovelBar;
-
+    private float _timeWhileCanDealDamage = 0.75f;
+    private float _timerWhileCanDealDamage = -1;
     float timeUntilMelee;
 
     void Start() {
@@ -21,15 +23,17 @@ public class ShovelAttack : MonoBehaviour {
             if (Input.GetKey(KeyCode.Space) && PlayerController.Instance.isShovelGot) {
                 anim.SetTrigger("Attack");
                 timeUntilMelee = meleeSpeed;
+                _timerWhileCanDealDamage = _timeWhileCanDealDamage;
             }
         }
         else {
-            timeUntilMelee -= Time.deltaTime;
+            timeUntilMelee = Math.Max(timeUntilMelee - Time.deltaTime, -1);
+            _timerWhileCanDealDamage = Math.Max(_timerWhileCanDealDamage - Time.deltaTime, -1) ;
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Enemy") {
+        if (other.tag == "Enemy" && isDealingDamage()) {
             ES = other.gameObject.GetComponent<EnemyStats>();
             ES.getDamage(meleeDamage);
         }
@@ -39,5 +43,10 @@ public class ShovelAttack : MonoBehaviour {
             BS.GetDamage(meleeDamage);
         }
 
+    }
+
+    private bool isDealingDamage()
+    {
+        return _timerWhileCanDealDamage > 0;
     }
 }
