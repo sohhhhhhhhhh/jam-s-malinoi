@@ -20,7 +20,7 @@ public class EnemyAIMelee : MonoBehaviour
     private float _knockbackTime = 0.5f;
     private float _knockbackTimer = 0.5f;
 
-    [SerializeField] private bool _IsKnockBacked = false;
+    [SerializeField] private bool _IsKnockBacked;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
