@@ -41,6 +41,6 @@ public class SpawnerBossRoom : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        Instantiate(enemyPrefabs[0], _spawnPosition, Quaternion.identity, transform);
+        Instantiate(enemyPrefabs[UnityEngine.Random.Range(0, enemyPrefabs.Length)], _spawnPosition, Quaternion.identity, transform);
     }
 }

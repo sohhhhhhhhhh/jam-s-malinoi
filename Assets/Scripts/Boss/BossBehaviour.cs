@@ -7,12 +7,12 @@ public class BossBehaviour : MonoBehaviour
     public int hp = 20;
     private float _timer;
     private float _speed = 2f;
-    private float _changeDirectionCooldown = 2;
+    private float _changeDirectionCooldown = 3;
     private int _currentDirectionIndex = 0;
     private Rigidbody2D _rb;
     private Vector3[] _moveDirections =
     {
-        Vector3.right, Vector3.up, Vector3.down, Vector3.left
+        Vector3.right, Vector3.up, Vector3.down, Vector3.right, Vector3.left, Vector3.down, Vector3.up, Vector3.left
     };
 
     private void Awake()
@@ -31,7 +31,7 @@ public class BossBehaviour : MonoBehaviour
         _timer -= Time.deltaTime;
         if (_timer < 0)
         {
-            if (_currentDirectionIndex + 1 < 4)
+            if (_currentDirectionIndex + 1 < 8)
             {
                 _currentDirectionIndex += 1;
             }
