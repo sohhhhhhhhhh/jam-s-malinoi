@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnerBossRoom : MonoBehaviour
 {
@@ -30,6 +31,11 @@ public class SpawnerBossRoom : MonoBehaviour
             {
                 SpawnEnemy();
             }
+        }
+
+        if (_BossBehaviour.hp <= 0)
+        {
+            SceneManager.LoadScene("EndScene");
         }
     }
 
